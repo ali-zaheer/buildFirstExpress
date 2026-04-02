@@ -1,0 +1,31 @@
+{
+  "name": "buildfirstexpress",
+  "version": "1.0.0",
+  "description": "learning to build first express server using ts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ali-zaheer/buildFirstExpress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ali-zaheer/buildFirstExpress/issues"
+  },
+  "homepage": "https://github.com/ali-zaheer/buildFirstExpress#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
