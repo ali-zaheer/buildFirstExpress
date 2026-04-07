@@ -1,15 +1,17 @@
 
 import express from "express";
 import routes from "./routes";
-import teachers from "./routes/api/teachers";
-import students from "./routes/api/students";
+import logger from "./middleware/logger";
+
 
 const app = express();
 const port = 3000;
 
-app.use("/api", routes);
-app.use('/api/teachers', teachers);
-app.use('/api/students', students);
+app.use("/", logger, routes);
+
+app.get("/", (req, res) => {
+    res.send("main page");
+});
 
 app.listen(port, () => {
     console.log(`Server started on port ${port}`);
